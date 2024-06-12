@@ -1,16 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-
+// rfce for getting basic lines of code 
+import React from 'react'  
 
 function App() {
   return (
-    <div className="todoapp stack-large">     {/* class name for css/html. lowercase and using "-"*/}
-
-      {/* <h1>TodoList</h1> */}
+    <div>
       
     </div>
   )
-};
+}
 
-export default App;
+export default App
