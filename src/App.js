@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="todoapp stack-large">     {/* class name for css/html. lowercase and using "-"*/}
 
-      <h1>TodoList</h1>
+      {/* <h1>TodoList</h1> */}
       
     </div>
   )
