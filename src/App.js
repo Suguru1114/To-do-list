@@ -16,7 +16,7 @@ function App() {
     //need to think id the new item was blank or empty
     }
 
-return (
+return (  //return has to be out side of function
   <div>
     <h1>Todo list</h1>
     <input type = "text" value ={input} onChange={handleInputChange}/>
