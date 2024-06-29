@@ -8,7 +8,7 @@ function App() {
 
 
   function handleInputChange(event){
-    setList(event.target.value)  //i wanna add text
+    setInput(event.target.value)  //i wanna add text
   }
   
   function addTask(){
@@ -21,7 +21,7 @@ return (  //return has to be out side of function
     <h1>Todo list</h1>
     <input type = "text" value ={input} onChange={handleInputChange}/>
     <button onClick={addTask}>Add</button>
-  
+    
   </div>
 )
 
