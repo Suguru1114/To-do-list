@@ -14,8 +14,11 @@ function App() {
   
   
   function addTask(){
+    if (input.trim() !==""){  //remove empty or white space
     setList([...list, input]);
-    //need to think id the new item was blank or empty
+    setInput(""); //empty the input bar after press add
+
+     }
     }
 
 return (  //return has to be out side of function
@@ -24,7 +27,7 @@ return (  //return has to be out side of function
     <input type = "text" value ={input} onChange={handleInputChange}/>
     
     <button onClick={addTask}>Add</button> 
-    {/* to render array of list, use "map function" */}
+    {/* to render array of list, use "map function" = can see the list of items */}
     <ul>     
 
       {list.map(function(task, index) {
