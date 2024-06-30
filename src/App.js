@@ -10,6 +10,8 @@ function App() {
   function handleInputChange(event){
     setInput(event.target.value)  //i wanna add text
   }
+
+  
   
   function addTask(){
     setList([...list, input]);
@@ -20,8 +22,15 @@ return (  //return has to be out side of function
   <div>
     <h1>Todo list</h1>
     <input type = "text" value ={input} onChange={handleInputChange}/>
-    <button onClick={addTask}>Add</button>
     
+    <button onClick={addTask}>Add</button> 
+    {/* to render array of list, use "map function" */}
+    <ul>     
+
+      {list.map(function(task, index) {
+      return <li key={index}>{task}</li>;
+    })}
+    </ul>
   </div>
 )
 
