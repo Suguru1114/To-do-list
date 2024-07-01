@@ -20,11 +20,20 @@ function App() {
 
      }
     }
+   
+    function handleKeyPress(event){
+      if (event.key === "Enter"){
+        addTask();
+      }
+    }
 
 return (  //return has to be out side of function
   <div>
     <h1>Todo list</h1>
-    <input type = "text" value ={input} onChange={handleInputChange}/>
+    <input 
+      type = "text" value ={input} onChange={handleInputChange} 
+
+      />
     
     <button onClick={addTask}>Add</button> 
     {/* to render array of list, use "map function" = can see the list of items */}
