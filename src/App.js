@@ -15,8 +15,8 @@ function App() {
   
   function addTask(){
     if (input.trim() !==""){  //remove empty or white space
-    setList([...list, input]);
-    setInput(""); //empty the input bar after press add
+      setList([...list, input]);
+      setInput(""); //empty the input bar after press add
 
      }
     }
@@ -31,7 +31,10 @@ return (  //return has to be out side of function
   <div>
     <h1>Todo list</h1>
     <input 
-      type = "text" value ={input} onChange={handleInputChange} 
+      type = "text" 
+      value ={input} 
+      onChange={handleInputChange} 
+      onKeyPress={handleKeyPress}
 
       />
     
