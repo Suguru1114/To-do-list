@@ -34,7 +34,7 @@ return (  //return has to be out side of function
       type = "text" 
       value ={input} 
       onChange={handleInputChange} 
-      onKeyPress={handleKeyPress}
+      onKeyPress={handleKeyPress} //make enter key work 
 
       />
     

@@ -2,7 +2,7 @@ Planning for To-do list app
 
 8-07; make enter button work  ✔︎
         start searching delete from To-do list
-
+- make a functio that shows the count of todos in todo list
 - make a function for deleting a task from To-do list 
 
 once to do list is ticked - save in somewhere in drop down 
