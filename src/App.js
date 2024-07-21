@@ -27,6 +27,10 @@ function App() {
       }
     }
 
+    function getTaskCount(){
+      return list.length;
+    }
+
 return (  //return has to be out side of function
   <div>
     <h1>Todo list</h1>
@@ -40,6 +44,8 @@ return (  //return has to be out side of function
     
     <button onClick={addTask}>Add</button> 
     {/* to render array of list, use "map function" = can see the list of items */}
+    <p>Current tasks number: {getTaskCount()}</p>
+
     <ul>     
 
       {list.map(function(task, index) {
