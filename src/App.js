@@ -27,6 +27,11 @@ function App() {
       }
     }
 
+    function deleteTask(index) {
+      const newList = list.filter((_, i) => i !== index); // Remove the task at the specified index
+      setList(newList); // Update the list state
+    }
+
     function getTaskCount(){
       return list.length;
     }
@@ -49,7 +54,13 @@ return (  //return has to be out side of function
     <ul>     
 
       {list.map(function(task, index) {
-      return <li key={index}>{task}</li>;
+      return (
+        <li key={index}>
+              {task}
+              <button onClick={function () { deleteTask(index); }}>Delete</button> {/* Add delete button */}
+              </li>
+
+      );
     })}
     </ul>
   </div>
