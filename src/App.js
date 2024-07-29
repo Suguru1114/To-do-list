@@ -57,7 +57,8 @@ return (  //return has to be out side of function
       return (
         <li key={index}>
               {task}
-              <button onClick={function () { deleteTask(index); }}>Delete</button> {/* Add delete button */}
+              <button onClick={function () { deleteTask(index); }}>Delete</button> 
+              {/* Add delete button */}
               </li>
 
       );
