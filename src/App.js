@@ -11,6 +11,13 @@ function App() {
     setInput(event.target.value)  //i wanna add text
   }
 
+    const submitUpdate = value => {
+      updateTodo(edit.id,value)
+        setEdit({
+          id: null,
+          value : ''
+        })
+    }
   
   
   function addTask(){
