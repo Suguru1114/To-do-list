@@ -11,13 +11,13 @@ function App() {
     setInput(event.target.value)  //i wanna add text
   }
 
-    const submitUpdate = value => {
-      updateTodo(edit.id,value)
-        setEdit({
-          id: null,
-          value : ''
-        })
-    }
+    // const submitUpdate = value => {
+    //   updateTodo(edit.id,value)
+    //     setEdit({
+    //       id: null,
+    //       value : ''
+    //     })
+    // }
   
   
   function addTask(){
@@ -64,6 +64,7 @@ return (  //return has to be out side of function
       return (
         <li key={index}>
               {task}
+              <button>Edit</button>
               <button onClick={function () { deleteTask(index); }}>Delete</button> 
               {/* Add delete button */}
               </li>
